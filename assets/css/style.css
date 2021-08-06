@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Faustina&display=swap');
+::-moz-selection {
+    /* Code for Firefox */
+    color: #fff;
+    background: red;
+}
+
+#admin-login {
+    background-image: linear-gradient(rgba(172, 151, 151, 0.8), rgba(27, 96, 117, 0.8)), url(../../img/ground.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 10%;
+}
+
+#admin-login .container .admin-login-content {
+    width: 390px;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(243, 242, 240);
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.83);
+    -webkit-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.83);
+}
+
+#admin-login .container .avator {
+    text-align: center;
+    margin-top: -70px;
+}
+
+#admin-login .container .avator img {
+    width: 110px;
+    border: 10px solid rgb(243, 242, 240);
+    border-radius: 10% 10% 50% 50%;
+    padding: 5px;
+    background: rgb(6, 115, 165);
+}
+
+#admin-login .container .avator h2 {
+    font-size: 25px;
+    padding-bottom: 15px;
+    font-family: 'Faustina', serif;
+}
+
+#admin-login .container .admin-login-content .admin-login-text input:focus {
+    outline: 0;
+}
+
+#admin-login .container .admin-login-content .admin-login-text input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(178, 178, 179);
+    border-radius: 4px;
+    outline: none;
+    background: transparent;
+    margin: 5px 0 15px;
+    font-size: 14px;
+    font-family: 'Faustina', serif;
+}
+
+#admin-login .container .admin-login-content .admin-login-text form span {
+    color: red;
+}
+
+
+/*+++++++++++++Checkbox+++++++++++++++*/
+
+#admin-login .container .admin-login-content .admin-login-text .check-box-div {
+    margin-bottom: 10px;
+}
+
+#admin-login .container .admin-login-content .admin-login-text .check-box-div .label {
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+    padding-left: 25px;
+}
+
+#admin-login .container .admin-login-content .admin-login-text .check-box-div .checkbox {
+    position: absolute;
+    left: -999px;
+}
+
+#admin-login .container .admin-login-content .admin-login-text .check-box-div .label::before {
+    content: "";
+    background-color: #fff;
+    border: 3px solid rgb(9, 114, 184);
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+}
+
+#admin-login .container .admin-login-content .admin-login-text .check-box-div .label::after {
+    content: "\2713";
+    border-radius: 5px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bolder;
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    transform: scale(0);
+    transition: transform 0.2s linear;
+}
+
+#admin-login .container .admin-login-content .admin-login-text .check-box-div .checkbox:checked+.label:after {
+    transform: scale(1);
+}
+
+
+/*+++++++++++++Login++++++++++++*/
+
+#admin-login .container .admin-login-content .admin-login-text input[type="submit"] {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#admin-login .container .admin-login-content .admin-login-text .login-btn input {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background: rgb(6, 115, 165);
+    border: none;
+    opacity: 1;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'Faustina', serif;
+}
+
+#admin-login .container .admin-login-content .admin-login-text .login-btn input:hover {
+    opacity: .7;
+    color: #000;
+}
+
+#admin-login .container .admin-login-content .admin-login-text .register-reset {
+    margin-top: 10px;
+}
+
+#admin-login .container .admin-login-content .admin-login-text .register-reset a,
+span {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 700;
+    opacity: .5;
+    padding-left: 3px;
+    font-family: 'Faustina', serif;
+}
+
+#admin-login .container .admin-login-content .admin-login-text .register-reset a:hover {
+    opacity: 1;
+    color: rgb(6, 115, 165);
+}
